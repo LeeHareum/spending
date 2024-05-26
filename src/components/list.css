@@ -1,0 +1,21 @@
+#list {
+  background-color: rgba(161, 246, 115, 0.376);
+  margin: 0 20px;
+  border-radius: 20px;
+  border: 3px solid rgba(250, 252, 182, 0.806);
+}
+#list li {
+  width: auto;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 255, 195);
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.806);
+}
+#list li:hover {
+  background-color: rgb(250, 247, 155);
+  cursor: pointer;
+}
