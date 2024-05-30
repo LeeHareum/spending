@@ -1,8 +1,7 @@
 import { Section } from "../pages/Home";
 import styled from "styled-components";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { ExpenseContext } from "../contexts/ExpenseContext";
 
 const InputRow = styled.div`
   display: flex;
@@ -46,8 +45,7 @@ const AddButton = styled.button`
   }
 `;
 
-export default function CreateExpense({ month }) {
-  const { expenses, setExpenses } = useContext(ExpenseContext);
+export default function CreateExpense({ month, expenses, setExpenses }) {
   const [newDate, setNewDate] = useState(
     `2024-${String(month).padStart(2, "0")}-01`
   );

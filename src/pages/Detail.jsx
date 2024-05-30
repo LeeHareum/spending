@@ -1,7 +1,6 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { useNavigate, useParams } from "react-router-dom";
-import { ExpenseContext } from "../contexts/ExpenseContext";
 
 const Container = styled.div`
   max-width: 800px;
@@ -58,10 +57,9 @@ const BackButton = styled(Button)`
   }
 `;
 
-export default function Detail() {
+export default function Detail({ expenses, setExpenses }) {
   const navigate = useNavigate();
   const { id } = useParams();
-  const { expenses, setExpenses } = useContext(ExpenseContext);
 
   const selectedExpense = expenses.find((element) => element.id === id);
 
