@@ -1,8 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. 지출관리 리스트 기본
 
-Currently, two official plugins are available:
+- React-router-dom
+- 로컬 스토리지
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Context API 를 사용한 상태 관리로 리팩토링
+
+3. Redux Toolkit 을 사용한 상태 관리로 리팩토링
