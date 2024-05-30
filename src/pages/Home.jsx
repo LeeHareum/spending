@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { useState, useContext } from "react";
-import MonthNav from "../components/MonthNav";
+import { useState } from "react";
 import ExpenseList from "../components/ExpenseList";
 import CreateExpense from "../components/CreateExpense";
-import { ExpenseContext } from "../contexts/ExpenseContext";
+import MonthNav from "../components/MonthNav";
 
 const Container = styled.main`
   max-width: 800px;
@@ -20,9 +19,8 @@ export const Section = styled.section`
   padding: 20px;
 `;
 
-export default function Home() {
+export default function Home({ expenses, setExpenses }) {
   const [month, setMonth] = useState(1);
-  const { expenses } = useContext(ExpenseContext);
 
   const filteredExpenses = expenses.filter(
     (expense) => expense.month === month
@@ -31,7 +29,11 @@ export default function Home() {
   return (
     <Container>
       <MonthNav month={month} setMonth={setMonth} />
-      <CreateExpense month={month} />
+      <CreateExpense
+        month={month}
+        expenses={expenses}
+        setExpenses={setExpenses}
+      />
       <ExpenseList expenses={filteredExpenses} />
     </Container>
   );
