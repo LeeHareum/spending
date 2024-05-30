@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   const [expenses, setExpenses] = useState([
     {
-      id: "59454ecd-0f61-422a-89d9-3213915343f2",
+      id: uuidv4(),
       month: 1,
       date: "2024-01-05",
       item: "식비",
@@ -16,7 +16,7 @@ function App() {
       description: "세광양대창",
     },
     {
-      id: "4f60bace-03dc-458d-b0dc-d89ada034b29",
+      id: uuidv4(),
       month: 1,
       date: "2024-01-10",
       item: "도서",
@@ -24,7 +24,7 @@ function App() {
       description: "모던 자바스크립트",
     },
     {
-      id: "34e14f86-1b9d-462d-af79-6dd9b5d1fcc5",
+      id: uuidv4(),
       month: 2,
       date: "2024-02-02",
       item: "식비",
@@ -32,7 +32,7 @@ function App() {
       description: "회식",
     },
     {
-      id: "52f8e60d-5998-4f82-961d-4ab0cb3f26b1",
+      id: uuidv4(),
       month: 2,
       date: "2024-02-02",
       item: "간식",
@@ -40,7 +40,7 @@ function App() {
       description: "아이스크림",
     },
     {
-      id: "e678e3f4-5aa1-4ccd-a1c7-86e839c4ac9e",
+      id: uuidv4(),
       month: 2,
       date: "2024-02-02",
       item: "여행",
@@ -48,7 +48,7 @@ function App() {
       description: "일본여행",
     },
     {
-      id: "c9caf250-8c8a-4dde-9f0e-b86e72cbaad2",
+      id: uuidv4(),
       month: 2,
       date: "2024-02-02",
       item: "미용",
@@ -56,7 +56,7 @@ function App() {
       description: "미용실",
     },
     {
-      id: "b0247fe5-7d54-45fe-9945-7f8687b0ded5",
+      id: uuidv4(),
       month: 2,
       date: "2024-02-02",
       item: "도서",
